@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Write.WriteActivity">
+
+    <EditText
+        android:id="@+id/write_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:hint="제목"
+        android:maxLength="20"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/write_picture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:background="#92CFBF"
+        android:text="사진 업로드"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/write_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top"
+        android:hint="내용"
+        android:maxLength="200"
+        android:maxLines="50"
+        app:layout_constraintTop_toBottomOf="@+id/write_picture"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/write_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#92CFBF"
+        android:text="취소"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toRightOf="@+id/write_save"
+        app:layout_constraintTop_toBottomOf="@+id/write_content"
+        android:layout_marginLeft="30dp"
+        tools:ignore="MissingConstraints"/>
+
+
+    <Button
+        android:id="@+id/write_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:background="#92CFBF"
+        android:text="저장"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_content"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

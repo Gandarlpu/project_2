@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prototype">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Zzim.ZzimActivity"></activity>
+        <activity android:name=".rowActivity" />
+        <activity android:name=".change.NickActivity" />
+        <activity android:name=".change.PassActivity" />
+        <activity android:name=".change.IdActivity" />
+        <activity android:name=".Write.ShowActivity" />
+        <activity android:name=".Write.WriteActivity" />
+        <activity android:name=".Auth.MyInfoActivity" />
+        <activity android:name=".Auth.JoinActivity" />
+        <activity android:name=".Auth.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

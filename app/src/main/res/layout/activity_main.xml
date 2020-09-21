@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crowd"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/calender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        tools:ignore="MissingConstraints">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alarmbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        app:layout_constraintTop_toBottomOf="@+id/calender_layout"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/write"
+        app:layout_constraintTop_toBottomOf="@+id/alarmbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글쓰기"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/Datapicker"
+        app:layout_constraintTop_toBottomOf="@+id/write"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="피커"
+        tools:ignore="MissingConstraints"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
